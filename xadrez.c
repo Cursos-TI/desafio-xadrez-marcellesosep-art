@@ -44,8 +44,35 @@ while (passos do bispo < 5);
         printf("Rainha terminou na linha %d, coluna %d\n", linha rainha , coluna rainha);
         printf ("\n=== fim do jogo de xadrez simplificado!===\n");
 
-        return 0;
-        
+        // Movimento do cavalo
+
+        int movimento completo = 1; contolar movimento em 'L'
+
+        while( movimentocompleto--)
+        {
+          for(int i = 0; i<2; i++){
+            
+            // imprimir "cima duas vezes"
+             printf("cima\n"); 
+            
+            // imprimir"Direita" uma vez
+             printf("direita\n");
+
+            for(int i = 0; i<2; i++){
+              
+              //Imprimir "Baixo" duas vezes
+               printf("baixo\n");
+
+              // imprimir"esquerda"uma vez
+              printf("esquerda\n");
+
+
+            }
+          return 0;
+        }
+       
+       
+       
     } 
  
 
