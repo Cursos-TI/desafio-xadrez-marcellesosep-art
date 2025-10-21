@@ -1,5 +1,26 @@
 #include <stdio.h>
 
+void rainha_esquerda_recursiva(int posicao, int max_passos, int passo, int max_moves);
+void cavalo_L_cima_direita_recursivo(int linha, int coluna, int passo, int max_passos);
+
+void bispo_diag_cima_direita_recursivo(int linha, int coluna, int passo, int max_passos) {
+    if (passo < max_passos) {
+        linha--;   // sobe
+        coluna++;  // vai para a direita
+        printf("Bispo na posicao: linha %d, coluna %d\n", linha, coluna);
+        bispo_diag_cima_direita_recursivo(linha, coluna, passo + 1, max_passos);
+    }
+}
+
+void torre_direita_recursiva(int posicao, int passo, int max_passos) {
+    if (passo <= max_passos) {
+        printf("Torre na casa %d\n", posicao + passo);
+        torre_direita_recursiva(posicao, passo + 1, max_passos);
+    }
+
+    
+}
+
 int main() {
   // Movimento da torre em for
   int posicao_torre = 1;
@@ -10,6 +31,7 @@ int main() {
   for (int i = 0; i <= 5; i++) {
     printf("Torre na casa %d\n", posicao_torre + i);
   }
+
 
   // Movimento do bispo em while
   int linha_bispo = 4;
