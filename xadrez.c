@@ -74,9 +74,6 @@ while (passos do bispo < 5);
         
     }  
       
-      return 0;
-        
-    } 
  
 
 
